@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepIndicatorView" >
+        <attr name="stepsCount" format="integer" />
+        <attr name="lineColor" format="color"/>
+        <attr name="lineStrokeWidth" format="integer"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="circleStrokeWidth" format="reference"/>
+        <attr name="stepRadius" format="reference"/>
+        <attr name="filledCircleColor" format="color"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>
+
