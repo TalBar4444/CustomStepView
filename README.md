@@ -19,7 +19,7 @@ Displays a classic Step Indicator.
 
 ```java
         stepsView1.setIndicatorView(this,
-                5,
+                	5,
                         R.color.orange,
                         4,
                         R.color.darker_gray,
