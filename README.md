@@ -18,16 +18,7 @@ allprojects {
 Displays a classic Step Indicator. 
 
 ```java
-        stepsView1.setIndicatorView(this,
-                	5,
-                        R.color.orange,
-                        4,
-                        R.color.darker_gray,
-                        5,
-                        3,
-                        R.color.navy,
-                        5,
-                        new Callback_OnStepClickListener() {
+        stepsView.setIndicatorView(this, 5, R.color.orange, 4, R.color.darker_gray, 5, 3, R.color.navy, 5, new Callback_OnStepClickListener() {
             @Override
             public void onStepClick(int step) {
                 Toast.makeText(MainActivity.this, step + " Clicked!!", Toast.LENGTH_SHORT).show();
@@ -39,19 +30,7 @@ Displays a classic Step Indicator.
 Displays a Step Indicator with customizable labels
 
 ```java
-     stepsView3.setIndicatorView(this,
-                4,
-                R.color.colorAccent,
-                4,
-                R.color.colorPrimary,
-                5,
-                3,
-                R.drawable.ic_like,
-                10,
-                labels,
-                40,
-                R.color.black,
-                new Callback_OnStepClickListener() {
+     stepsView3.setIndicatorView(this, 4, R.color.colorAccent, 4, R.color.colorPrimary, 5, 3, R.drawable.ic_like, 10, labels, 40, R.color.black, new Callback_OnStepClickListener() {
                     @Override
                     public void onStepClick(int step) {
                         Toast.makeText(MainActivity.this, step + " Clicked!!", Toast.LENGTH_SHORT).show();
