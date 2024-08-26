@@ -1,5 +1,5 @@
 # Custom Step View
-This library is a set of simple wrapper that was created to help you easily make your customizable Step Indicator.
+This library is a set of simple wrapper that was created to help you easily make a customizable Step Indicator.
 
 <img src="https://github.com/TalBar4444/CustomStepView/blob/master/screenshot.png" width="300">
 
