@@ -25,7 +25,7 @@ Displays a classic Step Indicator.
             }
         });
 ```
-
+Or
 #### CustomStepView with labels
 Displays a Step Indicator with customizable labels
 
@@ -41,20 +41,38 @@ Displays a Step Indicator with customizable labels
 # Existing Functionality
 Below is a list of the main functionalities:
 
-### `setIndicatorView(Context context,
-                      int stepsCount,
-                      int lineColor,
-                      int lineStrokeWidth,
-                      int circleColor,
-                      int circleStrokeWidth,
-                      int stepRadius,
-                      int stepIconOrColor,
-                      int padding,
-                      Callback_OnStepClickListener listener)`
+- **Parameters**:
+  - `context`: 
+    - The context in which the view is being used. This is usually the activity or fragment that contains the step indicator.
 
-- **Description**: Initializes the `StepIndicatorView` with the specified number of steps, colors and strokes for lines and circles.
-- **stepIconOrColor**: Determines whether to use an icon or a color for the steps
-- **listener**: a click listener for handling step clicks
+int stepsCount - The total number of steps in the step indicator. This determines how many circles will be drawn in the indicator.
+
+int lineColor - The color of the lines that connect the circles. This can be a reference to a color resource (e.g., `R.color.lineColor`) or a direct color value.
+
+int lineStrokeWidth - The Width of the stroke line 
+
+int circleColor - The color of the empty circles that represent steps that have not yet been completed. This can also be a color resource or a direct color value.
+
+int circleStrokeWidth - The Width of the stroke circle 
+
+int stepRadius - The size circle radius
+
+int stepIconOrColor - The color of the circles that represent completed steps. This color fills the circles when a step is marked as completed.
+
+int padding - padding for the all step Indicator
+
+- `textColor`: 
+    - The color of the text that appears inside the circles or as labels above/beside them. This can be a color resource or a direct color value. It applies to both the step numbers inside the circles and the labels (if provided).
+
+- `textSize`: 
+    - The size of the text used for both the step numbers inside the circles and the labels. This value is in pixels, and it determines how large the text will appear.
+
+  - `stepLabels`: 
+    - A list of strings that represent labels for each step. These labels are displayed above or beside the circles in the step indicator, depending on the orientation. If the list is null or empty, no labels will be shown.
+    - **Example**: If you have 5 steps and want labels like ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"], pass these as a `List<String>` to this parameter.
+
+  - `listener`: 
+    - A callback interface (`Callback_OnStepClickListener`) that is triggered when a user clicks on a step. This allows you to handle step click events, such as showing a message or performing an action when a specific step is clicked.
 
   ### `setIndicatorView(Context context,
                       int stepsCount,
