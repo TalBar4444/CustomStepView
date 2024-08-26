@@ -1,11 +1,7 @@
 # Custom Step View
 This library is a set of simple wrapper that was created to help you easily make your customizable Step Indicator.
 
-<img src="https://github.com/TalBar4444/CustomAlertDialog/blob/master/img_success.png" width="300">
-<img src="https://github.com/TalBar4444/CustomAlertDialog/blob/master/img_error.png" width="300">
-<img src="https://github.com/TalBar4444/CustomAlertDialog/blob/master/img_warning.png" width="300">
-<img src="https://github.com/TalBar4444/CustomAlertDialog/blob/master/img_info.png" width="300">
-<img src="https://github.com/TalBar4444/CustomAlertDialog/blob/master/img_delete.png" width="300">
+<img src="https://github.com/TalBar4444/CustomStepView/blob/master/screenshot.png" width="300">
 
 ## Setup
 Step 1. Add it in your root build.gradle at the end of repositories:
@@ -17,15 +13,6 @@ allprojects {
 }
 ```
 ## Usage
-
-### Step Indicator Types
-This library provides a customizable Step Indicator, enabling users to manage step progress, add labels and icons.
-It also allows dynamic configuration of colors, sizes, and padding directly from the main activity.
-* [CustomSuccessDialog](#customsuccessdialog)
-* [CustomErrorDialog](#customeerrordialog)
-* [CustomWarningDialog](#customwarningdialog)
-* [CustomInfoDialog](#custominfodialog)
-* [CustomDeleteDialog](#customdeletedialog)
 
 #### classic CustomStepView
 Displays a classic Step Indicator. 
@@ -49,7 +36,7 @@ Displays a classic Step Indicator.
 ```
 
 #### CustomStepView with labels
-Displays a classic Step Indicator with customizable labels
+Displays a Step Indicator with customizable labels
 
 ```java
      stepsView3.setIndicatorView(this,
@@ -115,7 +102,6 @@ Below is a list of the main functionalities:
 
 - **Description**: Fills the next circle in the step indicator and updates the current step.
  This function is typically called when the user clicks a button to advance to the next step.
-
 
 
 ## License
