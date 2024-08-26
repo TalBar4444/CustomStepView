@@ -37,8 +37,7 @@ Displays a Step Indicator with customizable labels
                     }
                 });
 ```
-### `setIndicatorView(Context context,
-                      int stepsCount,
+### `setIndicatorView(Context context, int stepsCount,
                       int lineColor,
                       int lineStrokeWidth,
                       int circleColor,
@@ -50,8 +49,7 @@ Displays a Step Indicator with customizable labels
 		      
 ## Existing Functionality
  
-- `context`: 
-    - The context in which the view is being used. This is usually the activity or fragment that contains the step indicator.
+- `context`: The context in which the view is being used. This is usually the activity or fragment that contains the step indicator.
 
 - `stepsCount`: The total number of steps in the step indicator. This determines how many circles will be drawn in the indicator.
 
@@ -69,18 +67,14 @@ Displays a Step Indicator with customizable labels
 
 - `padding`: padding for the all step Indicator
 
-- `textColor`: 
-    - The color of the text that appears inside the circles or as labels above/beside them. This can be a color resource or a direct color value. It applies to both the step numbers inside the circles and the labels (if provided).
+- `textColor`: The color of the text that appears inside the circles or as labels above/beside them. This can be a color resource or a direct color value. It applies to both the step numbers inside the circles and the labels (if provided).
 
-- `textSize`: 
-    - The size of the text used for both the step numbers inside the circles and the labels. This value is in pixels, and it determines how large the text will appear.
+- `textSize`: The size of the text used for both the step numbers inside the circles and the labels. This value is in pixels, and it determines how large the text will appear.
 
-  - `stepLabels`: 
-    - A list of strings that represent labels for each step. These labels are displayed above or beside the circles in the step indicator, depending on the orientation. If the list is null or empty, no labels will be shown.
+- `stepLabels`: A list of strings that represent labels for each step. These labels are displayed above or beside the circles in the step indicator, depending on the orientation. If the list is null or empty, no labels will be shown.
     - **Example**: If you have 5 steps and want labels like ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"], pass these as a `List<String>` to this parameter.
 
-  - `listener`: 
-    - A callback interface (`Callback_OnStepClickListener`) that is triggered when a user clicks on a step. This allows you to handle step click events, such as showing a message or performing an action when a specific step is clicked.
+- `listener`: A callback interface (`Callback_OnStepClickListener`) that is triggered when a user clicks on a step. This allows you to handle step click events, such as showing a message or performing an action when a specific step is clicked.
 
   ### `setIndicatorView(Context context,
                       int stepsCount,
