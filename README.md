@@ -38,34 +38,34 @@ Or
 		      
 ## parameters
  
-- `context`: The context in which the view is being used. This is usually the activity or fragment that contains the step indicator.
+- Context `context`: The context in which the view is being used. This is usually the activity or fragment that contains the step indicator.
 
-- `stepsCount`: The total number of steps in the step indicator. This determines how many circles will be drawn in the indicator.
+- int `stepsCount`: The total number of steps in the step indicator. This determines how many circles will be drawn in the indicator.
 
-- `lineColor`: The color of the lines that connect the circles. This can be a reference to a color resource (e.g. R.color.lineColor) or a direct color value.
+- int `lineColor`: The color of the lines that connect the circles. This can be a reference to a color resource (e.g. R.color.lineColor) or a direct color value.
 
-- `lineStrokeWidth`: The Width of the stroke line 
+- int `lineStrokeWidth`: The Width of the stroke line 
 
-- `circleColor`: The color of the empty circles that represent steps that have not yet been completed. This can also be a color resource or a direct color value.
+- int `circleColor`: The color of the empty circles that represent steps that have not yet been completed. This can also be a color resource or a direct color value.
 
-- `circleStrokeWidth`: The Width of the stroke circle 
+- int `circleStrokeWidth`: The Width of the stroke circle 
 
-- `stepRadius`: The size circle radius
+- int `stepRadius`: The size circle radius
 
-- `stepIconOrColor`:  Determines whether to use an icon or a color for a specific step, and applies it accordingly.
+- int `stepIconOrColor`:  Determines whether to use an icon or a color for a specific step, and applies it accordingly.
 
-- `padding`: padding for the all step Indicator
+- int `padding`: padding for the all step Indicator
 
-- `textColor`: The color of the text that appears as labels above the steps. This can be a color resource or a direct color value.
+- int `textColor`: The color of the text that appears as labels above the steps. This can be a color resource or a direct color value.
 
-- `textSize`: The size of the text used for the labels above the steps. This value is in pixels, and it determines how large the text will appear.
+- int `textSize`: The size of the text used for the labels above the steps. This value is in pixels, and it determines how large the text will appear.
 
-- `stepLabels`: A list of strings that represent labels for each step. These labels are displayed above the circles in the step indicator. If the list is null or empty, no labels will be shown.
+- List<String> `stepLabels`: A list of strings that represent labels for each step. These labels are displayed above the circles in the step indicator. If the list is null or empty, no labels will be shown.
    **Example**: If you have 5 steps and want labels like ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"], pass these as a `List<String>` to this parameter.
 
 - `listener`: A callback interface that is triggered when a user clicks on a step. This allows you to handle step click events, such as showing a message or performing an action when a specific step is clicked.
 
-### `nextStep(int currentStep)`
+### function `nextStep(int currentStep)`
 
 - **Description**: Fills the next circle in the step indicator and updates the current step.
  This function is typically called when the user clicks a button to advance to the next step.
