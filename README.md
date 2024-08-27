@@ -53,7 +53,7 @@ Displays a Step Indicator with customizable labels
 
 - `stepsCount`: The total number of steps in the step indicator. This determines how many circles will be drawn in the indicator.
 
-- `lineColor`: The color of the lines that connect the circles. This can be a reference to a color resource (e.g., `R.color.lineColor`) or a direct color value.
+- `lineColor`: The color of the lines that connect the circles. This can be a reference to a color resource (e.g. R.color.lineColor) or a direct color value.
 
 - `lineStrokeWidth`: The Width of the stroke line 
 
@@ -63,7 +63,7 @@ Displays a Step Indicator with customizable labels
 
 - `stepRadius`: The size circle radius
 
-- `stepIconOrColor`: The color of the circles that represent completed steps. This color fills the circles when a step is marked as completed.
+- `stepIconOrColor`:  Determines whether to use an icon or a color for a specific step, and applies it accordingly.
 
 - `padding`: padding for the all step Indicator
 
