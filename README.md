@@ -25,7 +25,7 @@ allprojects {
         });
 ```
 Or
-#### CustomStepView with labels - Displays a Step Indicator with customizable labels
+#### CustomStepView with labels - Displays step Indicator with customizable labels
 
 ```java
      stepsView3.setIndicatorView(this, 4, R.color.colorAccent, 4, R.color.colorPrimary, 5, 3, R.drawable.ic_like, 10, labels, 40, R.color.black, new Callback_OnStepClickListener() {
