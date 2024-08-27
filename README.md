@@ -37,17 +37,8 @@ Displays a Step Indicator with customizable labels
                     }
                 });
 ```
-### `setIndicatorView(Context context, int stepsCount,
-                      int lineColor,
-                      int lineStrokeWidth,
-                      int circleColor,
-                      int circleStrokeWidth,
-                      int stepRadius,
-                      int stepIconOrColor,
-                      int padding,
-                      Callback_OnStepClickListener listener)`
 		      
-## Existing Functionality
+## parameters
  
 - `context`: The context in which the view is being used. This is usually the activity or fragment that contains the step indicator.
 
@@ -72,23 +63,9 @@ Displays a Step Indicator with customizable labels
 - `textSize`: The size of the text used for the labels above the steps. This value is in pixels, and it determines how large the text will appear.
 
 - `stepLabels`: A list of strings that represent labels for each step. These labels are displayed above the circles in the step indicator. If the list is null or empty, no labels will be shown.
-    - **Example**: If you have 5 steps and want labels like ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"], pass these as a `List<String>` to this parameter.
+   **Example**: If you have 5 steps and want labels like ["Step 1", "Step 2", "Step 3", "Step 4", "Step 5"], pass these as a `List<String>` to this parameter.
 
 - `listener`: A callback interface that is triggered when a user clicks on a step. This allows you to handle step click events, such as showing a message or performing an action when a specific step is clicked.
-
-  ## setIndicatorView(
-  	      Context context,
-	      int lineColor,
-	      int lineStrokeWidth,
-	      int circleColor,
-	      int circleStrokeWidth,
-	      int stepRadius,
-	      int stepIconOrColor,
-	      int padding,
-	      List<String> stepLabels,
-	      int textSize,
-	      int textColor,
-	      Callback_OnStepClickListener listener)
 
 ### `nextStep(int currentStep)`
 
