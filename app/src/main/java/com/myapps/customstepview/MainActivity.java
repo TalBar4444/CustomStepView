@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private StepIndicatorLayout stepsView1, stepsView2, stepsView3, stepsView4;
     private Button main_BTN_button1, main_BTN_button2, main_BTN_button3, main_BTN_button4;
     List<String> labels = Arrays.asList("Step 1", "Step 2", "Step 3", "Step 4");
-    List<String> labels4 = Arrays.asList("Step 1", "Step 2", "Step 3");
+    List<String> labels4 = Arrays.asList("Register", "Verify", "Finish");
+    //private int counter = 1;
     private int counter1 = 1;
     private int counter2 = 1;
     private int counter3 = 1;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                         R.color.darker_gray,
                         5,
                         3,
-                        R.color.green,
+                        R.color.navy,
                         5,
                         new Callback_OnStepClickListener() {
             @Override

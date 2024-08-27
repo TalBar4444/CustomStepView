@@ -15,7 +15,7 @@
         <com.myapps.stepindicator.StepIndicatorLayout
             android:id="@+id/stepsView1"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_margin="20dp"
@@ -32,7 +32,7 @@
         <com.myapps.stepindicator.StepIndicatorLayout
             android:id="@+id/stepsView2"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_margin="20dp"/>
@@ -48,7 +48,7 @@
         <com.myapps.stepindicator.StepIndicatorLayout
             android:id="@+id/stepsView3"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_margin="20dp"/>
