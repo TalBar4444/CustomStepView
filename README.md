@@ -14,7 +14,7 @@ allprojects {
 ```
 ## Usage
 
-#### classic CustomStepView - #### Displays a classic Step Indicator. 
+#### classic CustomStepView - Displays a classic Step Indicator. 
 
 ```java
         stepsView.setIndicatorView(this, 5, R.color.orange, 4, R.color.darker_gray, 5, 3, R.color.navy, 5, new Callback_OnStepClickListener() {
@@ -25,8 +25,7 @@ allprojects {
         });
 ```
 Or
-#### CustomStepView with labels
-Displays a Step Indicator with customizable labels
+#### CustomStepView with labels - Displays a Step Indicator with customizable labels
 
 ```java
      stepsView3.setIndicatorView(this, 4, R.color.colorAccent, 4, R.color.colorPrimary, 5, 3, R.drawable.ic_like, 10, labels, 40, R.color.black, new Callback_OnStepClickListener() {
